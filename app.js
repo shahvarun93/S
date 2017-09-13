@@ -15,7 +15,9 @@ var commentRoutes=require("./routes/comments"),
     indexRoutes=require("./routes/index");
 
 app.use(flash());
-mongoose.connect("mongodb://localhost/yelp_camp_v6");
+// what this will do is that it will check if the process.env.databaseurl is not null and if it is null then it will take the second string 
+var url=process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v6";
+mongoose.connect(url);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));

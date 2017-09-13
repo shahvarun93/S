@@ -94,10 +94,10 @@ RESTFUL ROUTES
 
 name      url      verb    desc.
 ===============================================
-INDEX   /dogs      GET   Display a list of all dogs
-NEW     /dogs/new  GET   Displays form to make a new dog
-CREATE  /dogs      POST  Add new dog to DB
-SHOW    /dogs/:id  GET   Shows info about one dog
+INDEX   /      GET   Display a list of all campgrounds
+NEW     /campgrounds/new  GET   Displays form to make a new campground
+CREATE  /campgrounds      POST  Add a new campground to DB
+SHOW    /campgrounds/:id  GET   Shows info about one campground
 
 INDEX   /campgrounds
 NEW     /campgrounds/new
